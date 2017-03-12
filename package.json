@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wesyoung9987/fitpro-survey-server/issues"
   },
-  "homepage": "https://github.com/wesyoung9987/fitpro-survey-server"
+  "homepage": "https://github.com/wesyoung9987/fitpro-survey-server",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
