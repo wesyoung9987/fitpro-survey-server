@@ -1,13 +1,15 @@
 var path = require('path');
 var express = require('express');
+var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-require('./models/user');
+var User = require('./models/user');
 var db = process.env.MONGODB_URI || 'mongodb://localhost/data1';
 
 mongoose.connect(db);
 
 var app = express();
 
+app.use(bodyParser.json());
 
 var port = process.env.PORT || 8000;
 app.listen(port);
