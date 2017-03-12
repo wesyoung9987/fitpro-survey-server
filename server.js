@@ -15,9 +15,10 @@ app.listen(port);
 console.log('app listening on', port);
 
 app.get('/users', function(req, res, next) {
-    User.find(function(err, users){
-        res.send(users);
-    });
+    // User.find(function(err, users){
+    //     res.send(users);
+    // });
+    res.send('hello')
 });
 
 app.post('/users', function (req, res) {
