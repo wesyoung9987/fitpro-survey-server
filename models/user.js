@@ -15,4 +15,4 @@ var UserSchema = new mongoose.Schema({
     additionalThoughts: String
 });
 
-mongoose.model('User', UserSchema);
+exports.User = mongoose.model('User', UserSchema);
